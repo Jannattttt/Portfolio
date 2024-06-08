@@ -11,7 +11,7 @@ function Home(){
                 <h2><a href="#" className="logo">N<span>J</span></a></h2>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Reviews</a></li>
                 </ul>
@@ -31,30 +31,66 @@ function Home(){
         </div>
     </div>
     {/* About Page */}
-    <div className="hero2">
+    <div className="hero2" id="about">
         <div className="heroo2">
-        <div className="about1">
+            <div className="heroo22">
+                 <div className="about">
         <h2>Skills</h2>
         <p>Lorem ipsum dolor si<br />t amet consectetur adipisicing elit.<br /> Earum est quasi velit praesentium<br /> magnam in sint nesciunt facilis<br /> debitis quibusdam, architecto, totam<br /> natus sed dolorum illo odit<br /> doloribus ut inventore?</p>
         </div>
 
-        <div className="about2">
+        <div className="about">
         <h2>Education</h2>
         <p>Lorem ipsum dolor si<br />t amet consectetur adipisicing elit.<br /> Earum est quasi velit praesentium<br /> magnam in sint nesciunt facilis<br /> debitis quibusdam, architecto, totam<br /> natus sed dolorum illo odit<br /> doloribus ut inventore?</p>
         </div>
 
-        <div className="about3">
+        <div className="about">
         <h2>Values</h2>
         <p>Lorem ipsum dolor si<br />t amet consectetur adipisicing elit.<br /> Earum est quasi velit praesentium<br /> magnam in sint nesciunt facilis<br /> debitis quibusdam, architecto, totam<br /> natus sed dolorum illo odit<br /> doloribus ut inventore?</p>
         </div>
         </div>
+            </div>
 
         <div className="resume-button">
             <button type="button">Download Resume</button>
         </div>
     </div>
     {/* Services Page */}
-    <div></div>
+    <div className="services">
+        <div className="service-container">
+            <div className="sevice-heading">
+                <h2>Services</h2>
+            </div>
+            <div className="service-content1">
+                <div className="skills">
+                    <h3>Responsive Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+                <div className="skills">
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+                <div className="skills">
+                    <h3>Single Page Applications (SPA)</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+            </div>
+            <div className="service-content2">
+                <div className="skills">
+                    <h3>Responsive Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+                <div className="skills">
+                    <h3>Responsive Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+                <div className="skills">
+                    <h3>Responsive Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+            </div>
+        </div>
+    </div>
     {/* Reviews Page */}
     <div></div>
     {/* Contact Page */}
