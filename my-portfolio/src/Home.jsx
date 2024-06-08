@@ -31,7 +31,28 @@ function Home(){
         </div>
     </div>
     {/* About Page */}
-    <div></div>
+    <div className="hero2">
+        <div className="heroo2">
+        <div className="about1">
+        <h2>Skills</h2>
+        <p>Lorem ipsum dolor si<br />t amet consectetur adipisicing elit.<br /> Earum est quasi velit praesentium<br /> magnam in sint nesciunt facilis<br /> debitis quibusdam, architecto, totam<br /> natus sed dolorum illo odit<br /> doloribus ut inventore?</p>
+        </div>
+
+        <div className="about2">
+        <h2>Education</h2>
+        <p>Lorem ipsum dolor si<br />t amet consectetur adipisicing elit.<br /> Earum est quasi velit praesentium<br /> magnam in sint nesciunt facilis<br /> debitis quibusdam, architecto, totam<br /> natus sed dolorum illo odit<br /> doloribus ut inventore?</p>
+        </div>
+
+        <div className="about3">
+        <h2>Values</h2>
+        <p>Lorem ipsum dolor si<br />t amet consectetur adipisicing elit.<br /> Earum est quasi velit praesentium<br /> magnam in sint nesciunt facilis<br /> debitis quibusdam, architecto, totam<br /> natus sed dolorum illo odit<br /> doloribus ut inventore?</p>
+        </div>
+        </div>
+
+        <div className="resume-button">
+            <button type="button">Download Resume</button>
+        </div>
+    </div>
     {/* Services Page */}
     <div></div>
     {/* Reviews Page */}
