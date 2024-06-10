@@ -12,8 +12,8 @@ function Home(){
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
                 </ul>
                 <button type="button"><a href="#">Contact Me</a></button>
             </nav>
@@ -22,7 +22,7 @@ function Home(){
             <p>HELLO</p>
             <h1>I'm Nadice <span>Jasmine</span></h1>
             <h2>A Fullstack Developer</h2>
-            <button type="button"><a href="#">About</a></button>
+            <button type="button"><a href="#about">About</a></button>
             <button type="button"><a href="#">Contact Me</a></button>
         </div>
         <div className="image">
@@ -56,43 +56,55 @@ function Home(){
         </div>
     </div>
     {/* Services Page */}
-    <div className="services">
+    <div className="services" id="services">
         <div className="service-container">
             <div className="sevice-heading">
                 <h2>Services</h2>
             </div>
             <div className="service-content1">
                 <div className="skills">
-                    <h3>Responsive Web Design</h3>
+                    <div>
+                        <h5>Web Development</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
                 </div>
                 <div className="skills">
-                    <h3>UI/UX Design</h3>
+                    <div>
+                        <h5>UI/UX Design</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
                 </div>
                 <div className="skills">
-                    <h3>Single Page Applications (SPA)</h3>
+                    <div>
+                        <h5>API Development</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
                 </div>
             </div>
             <div className="service-content2">
                 <div className="skills">
-                    <h3>Responsive Web Design</h3>
+                    <div>
+                        <h5>Database Management</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
                 </div>
                 <div className="skills">
-                    <h3>Responsive Web Design</h3>
+                    <div>
+                        <h5>Cloud Services</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
                 </div>
                 <div className="skills">
-                    <h3>Responsive Web Design</h3>
+                    <div>
+                        <h5>Project Management</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     {/* Reviews Page */}
-    <div></div>
+    <div className="reviews"></div>
     {/* Contact Page */}
     <div></div>
     </>);

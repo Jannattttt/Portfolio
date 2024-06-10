@@ -206,22 +206,42 @@ h1 span {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
-  margin-left: 70px;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .service-content2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 70px;
-
+  justify-content: space-evenly;
 }
 
 .skills {
-  width: 300px;
+  width: 270px;
+  height: 120px;
+  border: 1px solid hsl(0, 0%, 50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
-.skills h3 {
+.skills h5 {
   color: turquoise;
+}
+
+.skills p {
+  font-weight: 300;
+  font-size: medium;
+}
+
+.reviews {
+  height: 110vh;
+  background-color: hsl(0, 0%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
