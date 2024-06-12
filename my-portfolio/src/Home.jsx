@@ -8,14 +8,14 @@ function Home(){
     <div className="hero">
         <div className="nav-bar">
             <nav>
-                <h2><a href="#" className="logo">N<span>J</span></a></h2>
+                <h2><a href="#footer" className="logo">N<span>J</span></a></h2>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#reviews">Reviews</a></li>
                 </ul>
-                <button type="button"><a href="#">Contact Me</a></button>
+                <button type="button"><a href="#Contact">Contact Me</a></button>
             </nav>
         </div>
         <div className="heroo">
@@ -23,7 +23,7 @@ function Home(){
             <h1>I'm Nadice <span>Jasmine</span></h1>
             <h2>A Fullstack Developer</h2>
             <button type="button"><a href="#about">About</a></button>
-            <button type="button"><a href="#">Contact Me</a></button>
+            <button type="button"><a href="#Contact">Contact Me</a></button>
         </div>
         <div className="image">
             {/* <img src={Profile1} alt="Profile" width={400}/> */}
@@ -104,9 +104,31 @@ function Home(){
         </div>
     </div>
     {/* Reviews Page */}
-    <div className="reviews"></div>
-    {/* Contact Page */}
-    <div></div>
+    <div className="reviews" id="reviews">
+        <div className="review-container">
+            <div className="review-header">
+                <h2>Reviews</h2>
+            </div>
+            <div className="reviews2">
+                 <div className="note">
+        <h2>Florence Mankata</h2>
+        <p>Lorem ipsum dolor si<br />t amet consectetur adipisicing elit.<br /> Earum est quasi velit praesentium<br /> magnam in sint nesciunt facilis<br /> debitis quibusdam, architecto, totam<br /> natus sed dolorum illo odit<br /> doloribus ut inventore?</p>
+        </div>
+
+        <div className="note">
+        <h2>Jeremy Nandan</h2>
+        <p>Lorem ipsum dolor si<br />t amet consectetur adipisicing elit.<br /> Earum est quasi velit praesentium<br /> magnam in sint nesciunt facilis<br /> debitis quibusdam, architecto, totam<br /> natus sed dolorum illo odit<br /> doloribus ut inventore?</p>
+        </div>
+
+        <div className="note">
+        <h2>Pearl Damon</h2>
+        <p>Lorem ipsum dolor si<br />t amet consectetur adipisicing elit.<br /> Earum est quasi velit praesentium<br /> magnam in sint nesciunt facilis<br /> debitis quibusdam, architecto, totam<br /> natus sed dolorum illo odit<br /> doloribus ut inventore?</p>
+        </div>
+        </div>
+       </div>
+    </div>
+    {/* Footer */}
+    {/* <div className="footer" id="footer"></div> */}
     </>);
 }
 

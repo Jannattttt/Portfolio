@@ -1,7 +1,11 @@
 import Home from "./Home";
+import Contact from "./Contact";
 
 function App(){
-  return(<Home/>);
+  return(<>
+          <Home/>
+          <Contact/>
+        </>);
 }
 
 export default App
