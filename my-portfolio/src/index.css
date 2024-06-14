@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-*{
+* {
   font-family: "Poppins", sans-serif;
   list-style: none;
   margin: 0;
@@ -31,11 +31,11 @@ nav {
   padding-right: 10%;
   background-color: hsl(0, 0%, 10%);
   position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 1000;
-    box-shadow: 2px 0 5px hsl(0, 0%, 5%);
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 2px 0 5px hsl(0, 0%, 5%);
 }
 
 nav button {
@@ -112,7 +112,7 @@ button:hover {
 }
 
 .image:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   cursor: pointer;
 }
 
@@ -126,13 +126,10 @@ h1 span {
 
 .hero2 {
   height: 95vh;
-  background-color:hsl(0, 0%, 12%);
- /*  display: flex;
-  align-items: center;
-  justify-content: center; */
+  background-color: hsl(0, 0%, 12%);
 }
 
-.heroo2{
+.heroo2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,6 +296,7 @@ h1 span {
   width: 40%;
   row-gap: 32px;
 }
+
 .container {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -345,4 +343,271 @@ input[type="checkbox"] {
   border: 0.15em solid turquoise;
   border-radius: 0.15em;
   transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  appearance: none;
+  transition: 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0, 43% 62%);
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em turquoise;
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked:before {
+  transform: scale(1);
+}
+
+.message-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10.6px;
+  flex: 1 0 0;
+  width: 100%;
+}
+
+textarea {
+  height: 177px;
+  padding: 16px;
+  resize: none;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1.333px solid hsl(0, 0%, 50%);
+  background: hsl(0, 0%, 15%);
+  color: white;
+}
+
+.send-button {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.send-button button {
+  padding: 16px 64px;
+  background: turquoise;
+  color: hsl(0, 0%, 15%);
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.send-button button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .hero {
+    height: auto;
+    text-align: center;
+  }
+
+  .image {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+
+  .heroo {
+    margin-left: 0;
+    margin-top: 10%;
+  }
+
+  .hero2 {
+    height: auto;
+  }
+
+  .heroo22 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services {
+    height: auto;
+    padding: 20px;
+  }
+
+  .service-container {
+    width: 100%;
+  }
+
+  .service-content1,
+  .service-content2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews {
+    height: auto;
+    padding: 20px;
+  }
+
+  .reviews2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .note {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .contact-form-container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .service-container {
+    width: 85%;
+  }
+
+  .heroo22 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services {
+    height: auto;
+    padding: 40px;
+  }
+
+  .service-content1,
+  .service-content2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews {
+    height: auto;
+    padding: 40px;
+  }
+
+  .reviews2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .note {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .contact-form-container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .service-container {
+    width: 80%;
+  }
+
+  .heroo22 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .services {
+    height: auto;
+    padding: 60px;
+  }
+
+  .service-content1,
+  .service-content2 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .reviews {
+    height: auto;
+    padding: 60px;
+  }
+
+  .reviews2 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .note {
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
+
+  .contact-form-container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .service-container {
+    width: 65%;
+  }
+
+  .heroo22 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .services {
+    height: auto;
+    padding: 80px;
+  }
+
+  .service-content1,
+  .service-content2 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .reviews {
+    height: auto;
+    padding: 80px;
+  }
+
+  .reviews2 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .note {
+    margin-left: 30px;
+    margin-bottom: 50px;
+  }
+
+  .contact-form-container {
+    width: 40%;
+  }
 }

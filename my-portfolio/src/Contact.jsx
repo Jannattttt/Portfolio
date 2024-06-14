@@ -6,9 +6,6 @@ function Contact(){
             <div>
                 <p className="sub-title">Get In Touch</p>
                 <h1>Contact Me</h1>
-                <p className="text-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis.
-                </p>
             </div>
             <form className="contact-form-container">
                 <div className="container">
