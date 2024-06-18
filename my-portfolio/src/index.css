@@ -108,7 +108,7 @@ button:hover {
   bottom: 0;
   left: 58%;
   top: 230px;
-  transition: 0.4s ease;
+  /* transition: 0.4s ease; */
 }
 
 .image:hover {
@@ -411,27 +411,56 @@ textarea {
 /* Media Queries */
 
 @media screen and (max-width: 600px) {
-  .nav ul {
+  body {
+    height: 700vh;
+  }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 40px;
+      padding-left: 10%;
+      padding-right: 10%;
+      background-color: hsl(0, 0%, 10%);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 2px 0 5px hsl(0, 0%, 5%);
+    }
+
+ /*  .nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
   }
-
+                                      
   .nav ul li {
     margin-bottom: 10px;
   }
-
+ */
   .hero {
     height: auto;
     text-align: center;
+    font-size: 1rem;
+    margin-top: 150px;
+  }
+
+  h1 span {
+    display: none;
   }
 
   .image {
     position: relative;
     left: 0;
     top: 0;
-    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .heroo {
@@ -448,19 +477,38 @@ textarea {
     align-items: center;
   }
 
+  .about {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+    /* height: 800px; */
+  }
+
+  .resume-button {
+    margin-top: 250px;
+  }
+
   .services {
     height: auto;
     padding: 20px;
+    margin-top: 30px;
+    padding-top: 10px;
   }
 
   .service-container {
     width: 100%;
+    height: auto;
   }
 
   .service-content1,
   .service-content2 {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .skills {
+    margin-bottom: 15px;
   }
 
   .reviews {
